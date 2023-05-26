@@ -1,0 +1,788 @@
+body{
+    background: linear-gradient(-45deg, #00291e99 20%, transparent 20% 80%, #00291e99 80% 100%), linear-gradient(45deg, #00291e99 20%, transparent 20% 80%, #00291e99 80% 100%), linear-gradient(-45deg, #000000 33%, transparent 33% 66%, #000000 66%), linear-gradient(45deg, transparent 33%, #00291e 33% 66%, transparent 66%);
+    background-size: 5em 5em;
+    background-color: #000000;
+    opacity: 1
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing:border-box;
+}
+
+.hero{
+    width: 100%;
+    color: #fff;
+    position: relative;
+    margin-bottom: 0;
+}
+
+/*code that makes nav stick to top of screen 
+  and appear above main photo*/
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+
+/* navigation styles */
+nav{
+    background-color: #00986f;
+    display: flex;
+    align-items: center;
+    padding: 20px 8%;
+}
+
+nav .menu-img{
+    margin-right: 25px;
+    cursor: pointer;
+}
+nav .logo{
+    cursor: pointer;
+}
+
+nav ul{
+    flex: 1;
+    text-align: right;
+    
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+
+}
+
+.returnButton {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+nav ul li a , .contactUsLink, .returnButton {
+    text-decoration: none;
+    color: #ffffff;
+    border: #000000 solid 2px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #00986f;
+    font-size:15px;
+    font-weight: bold;
+    transition: 500ms;
+}
+.indexNav:hover, .loginNav:hover, 
+.registerNav:hover, .aboutNav:hover{
+    opacity: 0.8;
+    padding: 15px;
+    transition: 500ms;
+    background-color: #00291e;
+    border-color: white;
+}
+.contactUsLink:hover, .returnButton:hover {
+    background-color: #00291e;
+    border-color: white;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+.indexNav:active, .loginNav:active, 
+.registerNav:active, .aboutNav:active {
+    opacity: 0.2;
+    transition: 1ms;
+}
+.contactUsLink:active, .returnButton:active {
+    opacity: 0.2;
+    transition: 1ms;
+}
+
+/* end of navigation styles */
+
+.MainPhoto {
+    width: 600px;
+}
+.welcomeContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 3;
+    padding: 30px;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    min-width: 0;
+}
+
+.text-container{
+    max-width: 750px;
+    text-align: center;
+    background-color: #00986f92;
+    padding: 30px;
+    border-radius: 40px;
+    box-shadow: 0px 0px 8px 3px;
+}
+
+.websiteTitle {
+    color: #00986f;
+    transition: 200ms;
+}
+.websiteTitle:hover {
+    transition: 200ms;
+    color: #00ffe1;
+
+}
+.titleContainer {
+    padding: 20px;
+    display: flex;
+    justify-content: center; 
+    background-color: #00291e;
+    text-align: center;
+    border-radius: 30px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: #fff solid;
+    transition: 200ms;
+}
+.titleContainer:hover {
+    box-shadow: 0px 0px 8px 3px;
+    transition: 200ms;
+}
+
+.text-container h1{
+    font-size: 80px;
+    font-weight: 400;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.text-container a{
+    text-decoration: none;
+    background: #00986f;
+    padding: 14px 40px;
+    display: inline-block;
+    color: #fff;
+    font-size: 20px;
+    margin-top: 30px;
+    border-radius: 30px;
+}
+
+.card-container1{
+    text-align: center;
+    
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    transition: 0.3s;
+    display: inline-block;
+    flex-direction: column;
+    padding-top: 75px;
+    padding: 15px;
+    text-align: center;
+    background-color: #00986f92;
+    margin: 20px;
+    border-radius: 40px;
+    box-shadow: 0px 0px 8px 3px;
+    transition: 400ms;
+}
+.card:hover {
+    padding: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: #01ba89be;
+    font-size: 18px;
+}
+
+  /* Add some padding inside the card container */
+.ourTeamContainer {
+    padding: 10px 26px;
+    flex: 1;
+}
+
+.card-student {
+    /* Add shadows to create the "card" effect */
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 5px;
+    border-radius: 20px;
+    gap: 20px;
+}
+
+.card-student:hover{
+    box-shadow: 0px 0px 8px 3px;
+    transition: 400ms;
+    background-color: #00986f92;
+}
+.card-student:active, .card:active {
+    opacity: 0.7;
+    transition: 0ms;
+}
+
+
+.student-review-text{
+    font-size: 20px;
+    text-align: center;
+    
+}
+/* Added flex to student reviews*/
+.fewStudentReviews {
+    display: flex;
+    padding: 30px;
+}
+
+.meet-team{
+    text-align: center;
+    font-size: 80px;
+    font-weight: 200;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.why-ace-div{
+    font-weight: bolder;
+
+    text-align: center;
+}
+
+.why-ace{
+    color: #00986f;
+    text-align: center;
+    font-size: 80px;
+    font-weight: 200;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.why-ace-text{  
+    text-align: center;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size: 25px;
+    padding: 20px;
+    background-color: #00986f92;
+    border-radius: 40px;
+    box-shadow: 0px 0px 8px 3px;
+
+}
+
+.loginContainer, #form {
+    border-radius: 25px;
+    background: #00986f;
+    padding: 20px; 
+    margin: auto;
+    margin-bottom: 120px;
+    width: 50%;
+    top: 100px;
+    position: relative;
+    
+  }
+
+.registerNowMessage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.registerNowMessage h4 a {
+    text-decoration: none;
+    color: #00986f; 
+    padding: 10px;
+    transition: 300ms;
+    font-weight: bold;
+
+}
+.registerNowMessage h4 a:hover {
+    cursor: pointer;
+    transition: 300ms;
+    font-size: 15px;
+}
+.registerNowMessage h4 a:active {
+    opacity: 0.7;
+    transition: none;
+}
+  #form {
+    color: white;
+  }
+
+  .contactEmail {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: white solid;
+    padding-left: 15px;
+  }
+  
+  input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=message], select {
+    width: 100%;
+    height: 200px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=password], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  
+  input[type=submit]:hover, #registerSubmitBtn:hover {
+    opacity: 0.8;
+    padding: 15px;
+    transition: 500ms;
+    background-color: #00291e;
+    border-color: white; 
+    padding: 20px; 
+}
+
+ input[type=submit], .submitButton {
+    width: 100%;
+    background-color: #00986f;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: black solid 2px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 500ms;
+  }
+
+input[type=submit]:active, #registerSubmitBtn:active {
+    opacity: 0.3;
+    transition: 100ms;
+}
+
+  .Avatar{
+    padding-top: 5px;
+  }
+
+
+  .StudentButton{
+    background-color: #00986f ;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    margin-right: 20px;
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    box-shadow: 0 9px #999
+  }
+
+.StudentButton:hover{
+    cursor: pointer;
+    background-color: #00815e;
+}
+
+.StudentButton:active{
+    background-color: #006b4e;
+    box-shadow: 0 5px #666;
+    transform: translateY(2px);
+}
+
+  .StudentLinks{
+    text-align: center;
+    padding: 10px;
+  }
+
+  .resources {
+    display: flex;
+    justify-content: center;
+}
+
+.resources table {
+    text-align: center;
+    margin: 0 auto; /* add margin:auto to center the table within .resources */
+    border-style: solid;
+}
+
+.resources th,
+.resources td {
+    padding: 10px; /* add padding to create spacing between cells */
+    border-style: solid;
+}
+
+/*
+    Footer styles
+*/
+.footerContainer {
+    background-color: #00986f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 80px 20px 80px;
+    margin-top: 1%;
+    margin-bottom: 0;
+}
+
+.footerTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    width: 100%;
+    color: white;
+}
+
+.footerBottom {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.socialMediaLinks {
+    display: flex;
+    gap: 10px;
+}
+
+.line {
+    border: solid 1px black;
+    border-radius: 5PX;
+    display: flex;
+    width: 100%;
+}
+
+/* gaps for form php files */
+.registerGap {
+    height: 200px;
+}
+.loginGap {
+    height: 180px;
+}
+.contactUsGap {
+    height: 80px;
+}
+
+
+.footerTop > div {
+    text-align: center;
+}
+
+.footerLink > a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    transition: 400ms;
+}
+.footerLink > a:hover {
+    text-decoration: underline;
+    font-size: 15px;
+    transition: 400ms;
+}
+.footerLink > a:active {
+    opacity: 0.3;
+    transition: 0ms;
+}
+
+.footerLink {
+    padding: 2px;
+}
+
+.footerTitle {
+    padding-bottom: 12px;
+    color: #000000;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.slogan {
+    font-family: sans-serif;
+    font-size: 15px;
+    letter-spacing: 0.4px;
+    word-spacing: 3px;
+    color: #000000;
+    font-weight: 700;
+    text-decoration: overline solid rgb(68, 68, 68);
+    font-style: italic;
+    font-variant: normal;
+    text-transform: capitalize;
+}
+
+.socialMediaImages > img {
+    width: 35px;
+    height: 35px;
+}
+.socialMediaImages {
+    padding: 10px;
+    border: #000000 solid 0.5px;
+    border-radius: 30px;
+}
+.copyrightMessage {
+    color: #000000;
+}
+ /* about.php styles */
+.aboutUsContainerIntro {
+    
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+}
+
+.aboutIntro > h1 {
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+    font-size: 50px;
+    color: #00986f;
+}
+.aboutIntro > p {
+    font-size: 20px;
+    margin-bottom: 25px;
+    background-color: #00986f92;
+    padding: 20px;
+    border-radius: 70px;
+    box-shadow: 0px 0px 8px 3px;
+}
+
+.infoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+    
+}
+
+.infoContainer > div > img {
+    width: 500px;
+    height: 350px;
+}
+.aboutText {
+    display: flex;
+    font-size: 20px;
+    text-align: center;
+    background-color: #00986f92;
+    border-radius: 70px;
+    padding: 30px;
+    box-shadow: 0px 0px 8px 3px;
+}
+.aboutTitleTwo > h1{
+
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    font-size: 50px;
+    color: #00986f;
+}
+/* end of about.php styles */
+
+/* start of news.php styles */
+.newsTitle h1, .reviewTitle h1 {
+    font-family: 'Times New Roman', Times, serif;
+
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 80px;
+    color: #00986f;
+}
+.containerRight div div h3 {
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.containerRight div div, .containerBottom div div {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    color: #00986f;
+
+}
+
+.newsContainer {
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.containerLeft div, .containerMiddle div, .containerRight div a,
+.containerBottom div a {
+    box-shadow: 0px 0px 8px 3px;
+    display: flex;
+    flex-direction: column;
+    transition: 300ms;
+    background-color: #00986f;
+    text-decoration: none;
+    color: white;
+}
+.containerMiddle {
+    display: flex;
+    max-width: 200px;
+    min-width: 200px;
+
+    flex-direction: column;
+    gap: 20px;
+}
+.containerRight div, .containerBottom div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    
+}
+.containerLeft div a {
+    font-weight: bolder;
+    font-size: 20px;
+}
+.containerLeft div:hover, .containerMiddle div:hover,
+.containerRight div a:hover, .containerBottom div a:hover {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #00986f;
+    transition: 300ms;
+}
+.containerBottom div a:hover {
+    background-color: #00986f;
+    transition: 300ms;
+    padding: 30px;
+
+}
+.containerLeft:active, .containerMiddle div:active,
+.containerRight div a:active, .containerBottom div a:active {
+    opacity: 0.7;
+    transition: none;
+}
+.containerLeft a {
+    background-color: #00986f;
+    display: flex;
+    padding: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+.containerBottom div a span {
+    font-weight: bold;
+    font-size: 16px;
+}
+.containerBottom div a {
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+}
+.containerMiddle div a,.containerRight div a,
+.containerRight div a {
+    display: flex;
+    font-size: 15px;
+    padding: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+.containerBottom {
+    display: flex;
+    justify-content: center;
+}
+.containerBottom div {
+    width: 1200px;
+
+}
+.aboutIntro 
+.containerLeft div a {
+    font-size: 20px;
+}
+/* end of news.php styles */
+
+
+
+
+/* start of news.php styles */
+.reviewsContainerMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;  
+}
+.reviewsContainerMain img {
+    width: 1000px;
+    box-shadow: 0px 0px 8px 3px;
+    border-radius: 30px;
+}
+.reviewsWelcomeMessage {
+    position: absolute;
+    top: 720px;
+    left: 350px;
+    width: 600px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    box-shadow: 0px 0px 8px 3px;
+    background-color: #00986f;
+    border-radius: 30px;
+}
+.reviewsWelcomeMessage div h1 span {
+    font-weight: lighter;
+}
+.reviewsMessage {
+    font-size: 14px;
+}
+.studentReviews {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    max-width: fit-content;
+    margin-left: 20%;
+    border-radius: 20px;
+    margin-bottom: 75px;
+}
+.studentReview {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    background-color: #00986f;
+    padding: 20px;
+    box-shadow: 0px 0px 8px 3px;
+
+}
+.studentReviewName {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.studentReviewContent {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.studentReviewDesc {
+    width: 700px;
+}
+
+
+/* end of reviews.php styles */
